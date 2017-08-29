@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SUBLIME·制作</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.form.js"></script>
+    <script type="text/javascript" src="./js/tooltips.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+    <script type="text/javascript" src="./js/xu_main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/xu_login.css">
+    <link rel="stylesheet" type="text/css" href="./css/xu_style.css">
+    <link rel="stylesheet" href="./css/jquery.vidbacking.css" />
+    <script src="./js/jquery.vidbacking.js"></script>
+</head>
+<!-- left for api -->
+<body>
+<!-- 弹窗登录 -->
+<div class="content">
+      <form action="#" method="post" id="login_form">
+      <table width="100%">
+          <thead>
+              <td colspan="2" class="thead">SUBLIME&nbsp;登录</td>
+            </thead>
+            <tbody>
+                <tr>
+                  <th><em class="red">*</em> 邮箱：</th>
+                  <td><input type="text" value="" name="" class="email ipt"> <span class="tooltip">(说明) <span>*表示必填哦,格式如：demo@qq.com</span></span></td>
+                </tr>
+                <tr>
+                  <th><em class="red">*</em> 密码：</th>
+                  <td><input type="password" value="" name="" class="password ipt"></td>
+                </tr>
+                <tr>
+                  <th class="pd15"></th>
+                  <td class="pd15">
+                    <button id="submit_btn" type="button">登录</button>
+                    <p class="line"><input type="checkbox" id="remember" value=""> <label for="remember">记住我</label></p>
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </div>
+<div id="video-back">
+  <video poster="./img/downphone.jpg" autoplay muted loop class="vidbacking" style="width: 10%;margin-top: -37px;">
+    <source src="./video.mp4" type="video/mp4">
+    <source src="./video.webm" type="video/webm">
+  </video>
+<!-- 用于遮罩 -->
+<div class="container"></div>
+<!-- top -->
+<div class="xu_top">
+<!-- topinfo -->
+	<span class="xu_topInfo">SUBLIME</span>
+  <ul class="xu_nav">
+    <li><a href="./index.html" id="active">制&nbsp;&nbsp;作</a></li>
+    <li><a href="./gallery.html">画&nbsp;&nbsp;廊</a></li>
+    <li><a href="./yard.html">广&nbsp;&nbsp;场</a></li>
+    <li><a href="./introduction.html">团队介绍</a></li>
+    <li><a href="./platform.html">平&nbsp;&nbsp;台</a></li>
+  </ul>
+	<span class="xu_login"><a href="#" id="signin">登录</a>|<a href="#" id="signup">注册</a></span>
+</div>
+
+<!-- body part -->
+<p class="xu_selectInfo" style="margin-top: 70px;">选择你喜爱的风格</p>
+<div class="xu_picStyle">
+	<ul class="xu_picPosition">
+		<li><img src="./img/style_pics/CHINESEART-001.jpg"></li>
+		<li><img src="./img/style_pics/COMIC-001.jpg"></li>
+		<li><img src="./img/style_pics/COMIC-002.jpg"></li>
+		<li><img src="./img/style_pics/CUBISM-001.jpg"></li>
+		<li><img src="./img/style_pics/EXPRESSIONISM-001.jpg"></li>
+		<li><img src="./img/style_pics/EXPRESSIONISM-002.jpg"></li>
+		<li><img src="./img/style_pics/EXPRESSIONISM-003.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-001.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-002.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-003.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-004.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-005.jpg"></li>
+		<li><img src="./img/style_pics/IMPRESSIONISM-006.jpg"></li>
+		<li><img src="./img/style_pics/PATTERN-001.jpg"></li>
+		<li><img src="./img/style_pics/PATTERN-002.jpg"></li>
+		<li><img src="./img/style_pics/REALISM-001.jpg"></li>
+	</ul>
+</div>
+
+<!-- footer part -->
+<div class="xu_footer" style="position: fixed;">
+	<p>CopyRight 2017 Power by sublime</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+  $(function(){
+        $('#video-back').vidbacking();
+  });
+</script>
+</html>
